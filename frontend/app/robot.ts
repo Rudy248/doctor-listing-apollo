@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://apollo-clone.vercel.app/sitemap.xml",
+    sitemap: "http://localhost:3000/sitemap.xml",
   };
 }
