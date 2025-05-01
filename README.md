@@ -66,4 +66,13 @@ npm run dev
 ```
 Visit: http://localhost:3000
 
+## 📱 Responsive Design
+The application is fully responsive and works seamlessly across desktop and mobile devices.
+
+## 🖼️ Screenshots
+🔹 Home Page
+![Homepage](/home_page.png)
+
+🔹 Add Doctor Page
+![Add Doctor](/add_doctor.png)
 
