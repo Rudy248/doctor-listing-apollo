@@ -5,3 +5,4 @@ sqlalchemy
 pydantic==2.6.1
 faker==37.1.0
 dotenv
+

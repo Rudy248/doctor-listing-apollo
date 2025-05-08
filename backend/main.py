@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 app = FastAPI()
-
-origins = ["http://localhost:3000"]
+url_db= "mysql://root:JOjdgxVkavUBKxHWjNZmZKnITMekGwcM@mysql.railway.internal:3306/railway"
+origins = ["http://localhost:3000", "https://doctor-listing-apollo-mtte.vercel.app/"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -32,13 +32,10 @@ class Doctor(BaseModel):
     fees: int
     language: str
 
+
+
 def get_db():
-    return mysql.connector.connect(
-    host=os.getenv("DB_HOST"),
-    user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD"),
-    database=os.getenv("DB_NAME")
-)
+    return mysql.connector.connect(url_db)
 
 
 @app.get("/list-doctor-with-filter")
