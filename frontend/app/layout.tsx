@@ -18,16 +18,9 @@ export const metadata: Metadata = {
       "Find General Physicians & Internal Medicine Specialists | Apollo 247 Clone",
     description:
       "Book appointments with the best General Physicians and Internal Medicine specialists. Consult with experienced doctors online or in-person.",
-    url: "https://apollo-clone.vercel.app/specialties/general-physician-internal-medicine",
+    url: "https://doctor-listing-apollo-mtte.vercel.app/",
     siteName: "Apollo 247 Clone",
-    images: [
-      {
-        url: "https://apollo-clone.vercel.app/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Apollo 247 Clone",
-      },
-    ],
+
     locale: "en_US",
     type: "website",
   },
@@ -48,11 +41,9 @@ export const metadata: Metadata = {
       "Find General Physicians & Internal Medicine Specialists | Apollo 247 Clone",
     description:
       "Book appointments with the best General Physicians and Internal Medicine specialists. Consult with experienced doctors online or in-person.",
-    images: ["https://apollo-clone.vercel.app/og-image.jpg"],
   },
   alternates: {
-    canonical:
-      "https://apollo-clone.vercel.app/specialties/general-physician-internal-medicine",
+    canonical: "https://doctor-listing-apollo-mtte.vercel.app/",
   },
 };
 
