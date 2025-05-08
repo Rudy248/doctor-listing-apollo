@@ -108,7 +108,7 @@ export default function AddDoctorForm() {
                 required: "Name is required",
               })}
               className="w-full p-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
-              placeholder="Dr. John Doe"
+              placeholder="John Doe"
             />
             {errors.name && (
               <p className="text-red-600 text-sm">{errors.name.message}</p>
