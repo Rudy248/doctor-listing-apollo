@@ -11,10 +11,10 @@ from dotenv import load_dotenv
 load_dotenv()
 app = FastAPI()
 
-origins = ["http://localhost:3000", "https://doctor-listing-apollo-mtte.vercel.app/"]
+origins = ["http://localhost:3000", "https://doctor-listing-apollo-mtte.vercel.app"]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[*],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
