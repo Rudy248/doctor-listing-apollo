@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronDown, ChevronUp, Filter, X } from "lucide-react";
+import { Filter, X } from "lucide-react";
 import axios from "axios";
 import { useSearchParams, useRouter } from "next/navigation";
 import { FilterOptions } from "@/types/Doctor";

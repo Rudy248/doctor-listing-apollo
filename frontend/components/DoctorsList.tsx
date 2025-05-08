@@ -23,8 +23,8 @@ export default function DoctorsList() {
 
       const gender = searchParams.get("gender") || "";
       const specialization = searchParams.get("specialization") || "";
-      const feesMin = searchParams.get("fees_min") || "0";
-      const feesMax = searchParams.get("fees_max") || "10000";
+      // const feesMin = searchParams.get("fees_min") || "0";
+      // const feesMax = searchParams.get("fees_max") || "10000";
       const language = searchParams.get("language") || "";
       const experience = searchParams.getAll("experience") || [];
       const fees = searchParams.getAll("fees") || [];
