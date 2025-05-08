@@ -72,7 +72,9 @@ export default function Filters() {
   useEffect(() => {
     const fetchFilterOptions = async () => {
       try {
-        const response = await axios.get(`${process.env.BACKEND_URL}`);
+        const response = await axios.get(
+          `${process.env.NEXT_PUBLIC_BACKEND_URL}`
+        );
         setFilterOptions(response.data.filters);
       } catch (error) {
         console.error("Failed to fetch filter options:", error);

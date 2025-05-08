@@ -23,8 +23,6 @@ export default function DoctorsList() {
 
       const gender = searchParams.get("gender") || "";
       const specialization = searchParams.get("specialization") || "";
-      // const feesMin = searchParams.get("fees_min") || "0";
-      // const feesMax = searchParams.get("fees_max") || "10000";
       const language = searchParams.get("language") || "";
       const experience = searchParams.getAll("experience") || [];
       const fees = searchParams.getAll("fees") || [];
@@ -67,7 +65,7 @@ export default function DoctorsList() {
         });
       }
 
-      const res = await axios.get(`${process.env.BACKEND_URL}`, {
+      const res = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}`, {
         params: {
           page: pageNum,
           page_size: 9,

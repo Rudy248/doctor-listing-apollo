@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 fake = Faker()
-url_db= "mysql://root:JOjdgxVkavUBKxHWjNZmZKnITMekGwcM@mysql.railway.internal:3306/railway"
 
 # Connect to MySQL
 db = mysql.connector.connect(
