@@ -1,5 +1,5 @@
-import DoctorsList from "@/components/DoctorsList";
-import Filters from "@/components/Filters";
+import FiltersWrapper from "@/components/FiltersWrapper";
+import DoctorsListWrapper from "@/components/DoctorsListWrapper";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,10 +22,10 @@ export default function Home() {
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <div className="lg:col-span-1">
-          <Filters />
+          <FiltersWrapper />
         </div>
         <div className="lg:col-span-3">
-          <DoctorsList />
+          <DoctorsListWrapper />
         </div>
       </div>
     </main>
