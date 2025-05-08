@@ -50,7 +50,7 @@ export default function AddDoctorForm() {
         image_url: imageUrl,
       };
 
-      const res = await fetch("http://localhost:8000/add-doctor", {
+      const res = await fetch(`${process.env.BACKEND_URL}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
