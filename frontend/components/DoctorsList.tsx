@@ -65,19 +65,22 @@ export default function DoctorsList() {
         });
       }
 
-      const res = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}`, {
-        params: {
-          page: pageNum,
-          page_size: 9,
-          gender,
-          specialization,
-          fees_min: minFee,
-          fees_max: maxFee,
-          language,
-          experience_min: minExp,
-          experience_max: maxExp,
-        },
-      });
+      const res = await axios.get(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/list-doctor-with-filter`,
+        {
+          params: {
+            page: pageNum,
+            page_size: 9,
+            gender,
+            specialization,
+            fees_min: minFee,
+            fees_max: maxFee,
+            language,
+            experience_min: minExp,
+            experience_max: maxExp,
+          },
+        }
+      );
 
       if (pageNum === 1) {
         setDoctors(res.data.doctors);

@@ -50,13 +50,16 @@ export default function AddDoctorForm() {
         image_url: imageUrl,
       };
 
-      const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(finalData),
-      });
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/add-doctor`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(finalData),
+        }
+      );
 
       if (!res.ok) {
         throw new Error("Failed to add doctor");

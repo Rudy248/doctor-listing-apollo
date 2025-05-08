@@ -73,7 +73,7 @@ export default function Filters() {
     const fetchFilterOptions = async () => {
       try {
         const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_BACKEND_URL}`
+          `${process.env.NEXT_PUBLIC_BACKEND_URL}/list-doctor-with-filter`
         );
         setFilterOptions(response.data.filters);
       } catch (error) {
